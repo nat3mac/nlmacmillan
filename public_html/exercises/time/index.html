@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Time is on My Side</title>
+	<link rel="stylesheet" type="text/css" href="time.css">
+	<script type="text/javascript" src="../../jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="time.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<a href="../../index.html" id="portal">
+			<div id="arrow"></div>
+			<span id="nm">NM</span>
+		</a>
+		<h1>Time is on My Side</h1>
+	</header>
+	
+	<section id="timeline">
+		<time datetime="2014-04-23" id="date">Wednesday, April 23rd, 2014</time>
+		<dl>
+			<dt class="listTime 1700"><time>17:00</time></dt>
+				<dd class="listTime 1700">Logo work</dd>
+			<dt class="listTime 1715"><time>17:15</time></dt>
+				<dd class="listTime 1715">Conference call</dd>
+			<dt class="listTime 1730"><time>17:30</time></dt>
+				<dd class="listTime 1730">Mix second Bloody Mary</dd>
+			<dt class="listTime 1745"><time>17:45</time></dt>
+				<dd class="listTime 1745">Illustration work</dd>
+			<dt class="listTime 1800"><time>18:00</time></dt>
+				<dd class="listTime 1800">Web design consulting</dd>
+			<dt class="listTime 1815"><time>18:15</time></dt>
+				<dd class="listTime 1815">Steam shirts</dd>
+			<dt class="listTime 1830"><time>18:30</time></dt>
+				<dd class="listTime 1830">Shave</dd>
+			<dt class="listTime 1845"><time>18:45</time></dt>
+				<dd class="listTime 1845">Smoke cigarette</dd>
+			<dt class="listTime 1900"><time>19:00</time></dt>
+				<dd class="listTime 1900">Play with cat</dd>
+			<dt class="listTime 1915"><time>19:15</time></dt>
+				<dd class="listTime 1915">Identity work</dd>
+			<dt class="listTime 1930"><time>19:30</time></dt>
+				<dd class="listTime 1930">Remove cat from keyboard</dd>
+			<dt class="listTime 1945"><time>19:45</time></dt>
+				<dd class="listTime 1945">Web design</dd>
+			<dt class="listTime 2000"><time>20:00</time></dt>
+				<dd class="listTime 2000">Make dinner</dd>
+			<dt class="listTime 2015"><time>20:15</time></dt>
+				<dd class="listTime 2015">Fix another drink</dd>
+			<dt class="listTime 2030"><time>20:30</time></dt>
+				<dd class="listTime 2030">Listen to NPR</dd>
+			<dt class="listTime 2045"><time>20:45</time></dt>
+				<dd class="listTime 2045">Eat dinner</dd>
+			<dt class="listTime 2100"><time>21:00</time></dt>
+				<dd class="listTime 2100">Smoke cigarette</dd>
+			<dt class="listTime 2115"><time>21:15</time></dt>
+				<dd class="listTime 2115">Clean litter box</dd>
+			<dt class="listTime 2130"><time>21:30</time></dt>
+				<dd class="listTime 2130">Take shower</dd>
+			<dt class="listTime 2145"><time>21:45</time></dt>
+				<dd class="listTime 2145">Brush teeth</dd>
+		</dl>
+	</section>
+	
+	<section id="graph">
+		<div id="plot">
+			<div id="line"></div>
+			<svg width="100%" viewBox="0 0 19 10" preserveAspectRatio=none>
+			<polygon id="bArea"
+				points="0,10
+				0,5 1,1 2,6 3,4 4,3
+				5,6 6,7 7,8 8,10 9,4
+				10,4 11,4 12,7 13,6
+				14,5 15,7 16,6 17,4
+				18,7 19,6 19,10" 
+				stroke-width="0.125" 
+				fill="#33b5e5"
+				/>
+			<polygon id="dArea"
+				points="0,10
+				0,3 1,2 2,4 3,3 4,2
+				5,5 6,6 7,7 8,9 9,4
+				10,7 11,1 12,5 13,7
+				14,6 15,8 16,7 17,3
+				18,4 19,4 19,10" 
+				stroke-width="0.125" 
+				fill="#ffbb33"
+				/>
+			<polygon id="fArea"
+				points="0,10
+				0,4 1,2 2,5 3,3 4,2
+				5,6 6,7 7,7 8,8 9,5
+				10,4 11,8 12,7 13,6
+				14,5 15,7 16,6 17,3
+				18,4 19,1 19,10" 
+				stroke-width="0.125" 
+				fill="#a965cb"
+				/>
+			<polygon id="hArea"
+				points="0,10
+				0,8 1,8 2,8 3,8 4,8
+				5,9 6,7 7,7 8,9 9,8
+				10,8 11,6 12,5 13,3
+				14,0 15,9 16,10 17,10
+				18,9 19,8 19,10" 
+				stroke-width="0.125" 
+				fill="#ff4444"
+				/>
+			</svg>
+		</div>
+		<ol>
+			<li class="listTime 1700"><time>17:00</time></li>
+			<li class="listTime 1715"><time>17:15</time></li>
+			<li class="listTime 1730"><time>17:30</time></li>
+			<li class="listTime 1745"><time>17:45</time></li>
+			<li class="listTime 1800"><time>18:00</time></li>
+			<li class="listTime 1815"><time>18:15</time></li>
+			<li class="listTime 1830"><time>18:30</time></li>
+			<li class="listTime 1845"><time>18:45</time></li>
+			<li class="listTime 1900"><time>19:00</time></li>
+			<li class="listTime 1915"><time>19:15</time></li>
+			<li class="listTime 1930"><time>19:30</time></li>
+			<li class="listTime 1945"><time>19:45</time></li>
+			<li class="listTime 2000"><time>20:00</time></li>
+			<li class="listTime 2015"><time>20:15</time></li>
+			<li class="listTime 2030"><time>20:30</time></li>
+			<li class="listTime 2045"><time>20:45</time></li>
+			<li class="listTime 2100"><time>21:00</time></li>
+			<li class="listTime 2115"><time>21:15</time></li>
+			<li class="listTime 2130"><time>21:30</time></li>
+			<li class="listTime 2145"><time>21:45</time></li>
+			<!--li><time>22:00</time></li-->
+		</ol>
+		<ul id="variables">
+			<li id="b">Boredom</li>
+			<li id="d">Depression</li>
+			<li id="f">Fatigue</li>
+			<li id="h">Hunger</li>
+		</ul>
+	</section>
+	
+	<footer>
+		<a href="mailto:nlmacmillan@ucdavis.edu">Nathaniel MacMillan</a>, 2014
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.dialog{
+	width:480px;
+	height:240px;
+	background:#eee;
+	color:#333;
+	position: absolute;
+	left: 50%;
+	top:128px;
+	margin-left: -240px;
+	z-index: 999;
+	padding:16px;
+	box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+}
+.shade{
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity: 0.5;
+	position: absolute;
+	top:0; right:0; bottom:0; left:0;
+	z-index: 997;
+}
+.dialog h4 {
+	color: #4ec48f;
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+.langSelect:hover{cursor: pointer;}
+
+#lang{
+	position: absolute;
+	top:12px;
+	right:16px;
+}
+#englishIcon{
+	opacity: .3;
+}
+#spanishIcon{margin-right: 4px;}
+.okay{
+	position:absolute;
+	bottom: 16px;
+	width: 128px;
+	height: 32px;
+	left:50%;
+	margin-left: -64px;
+	background: #4ec48f;
+	color:#fff;
+	border: none;
+	border-radius: 16px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+
+}
+.okay:hover{
+	background: #22b573;
+	cursor: pointer;
+	outline: none;
+}
+.okay:active{
+	outline: none;
+}

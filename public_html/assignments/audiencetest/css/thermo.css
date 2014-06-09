@@ -1,0 +1,42 @@
+#thermostat {
+	height:512px;
+	margin-top: 32px;
+	}
+#slider {
+	position:absolute;
+	top:50%;
+	margin-top:4px;
+	z-index:4;
+	}
+#track {
+	background:#333;
+	height:100%;
+	width:16px;
+	position: absolute;
+	left:32px;
+	}
+#grad {
+	background: -webkit-linear-gradient(#c1272d, #4d4d4d, #0071bc); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#c1272d, #4d4d4d, #0071bc); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#c1272d, #4d4d4d, #0071bc); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#c1272d, #4d4d4d, #0071bc); /* Standard syntax */
+	height:100%;
+	width:128px;
+	position: absolute;
+	left:64px;
+	margin-left:12px;
+	}
+#temp, #degs {
+	color:#fff;
+	opacity:0.7;
+	font-family:'Roboto', sans-serif;
+	font-size:24px;
+	font-weight: 300;
+	text-align:center;
+	position: relative;
+	top: 50%;
+	left:25%;
+	float:left;
+	margin-top:0px;
+	}
+.tempSelect:hover {cursor:pointer;}

@@ -1,0 +1,42 @@
+body {
+	background:url(images/dark-background.jpg), black;
+	background-repeat:no-repeat;
+	width:100%;
+	font-family:'Helvetica', sans-serif;
+	}
+header {
+	text-align:center;
+		}
+a:link {
+	color:white;
+	text-decoration:none;
+	}
+a:visited {
+	color:white;
+	}
+a:hover {
+	color:green;
+	}
+p {
+	color:#eeeeee;
+	width:890px;
+	margin:auto;
+	font-size: 18pt;
+	}
+#summary {
+	background:white;
+	color:black;
+	font-size:12pt;
+	width:760px;
+	margin:auto;
+	padding:16px;
+	}
+#photos {
+	width:900px;
+	margin:auto;
+	}
+#photos2{
+	width:792px;
+	margin:auto;
+#cast {float:left;}
+#hat {float:right;}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mad Libs 2.0</title>
+<link rel="stylesheet" type="text/css" href="madlibs.css">
+</head>
+<body>
+	<section id="content">
+		<header>
+			<a id="back" href="../../index.html">
+				<div id="nm"></div>
+				<div id="triangle"></div>
+			</a>
+			<div id="date">
+				<span id="month">month</span>
+				<span id="day">day</span>,
+				<span id="year">year</span>
+			</div>
+			<div id="logo"></div>
+			<h1>From the Law Offices of MacMillan & MacMillan</h1>
+		</header>
+	
+		<form name="f">
+			<fieldset id="wordInput">
+			<input type="text" name="userName" id="userName" placeholder="Your Name" required>
+			<input type="text" name="amount" placeholder="Number" required>
+			<input type="text" name="adj1" placeholder="Adjective" required>
+			<input type="text" name="adj2" placeholder="Adjective" required>
+			<input type="text" name="adj3" placeholder="Adjective" required>
+			<input type="text" name="noun1" placeholder="Noun" required>
+			<input type="text" name="person" placeholder="Favorite Person" required>
+			</fieldset>
+			<fieldset id="gender">
+				Gender:
+				<input type="radio" name="gender" value="female" required><label>Female</label>
+				<input type="radio" name="gender" value="male"><label>Male</label>
+				<input type="radio" name="gender" value="other"><label>Other</label>
+			</fieldset>
+			<fieldset id="element">
+				Element:
+				<input type="radio" name="element" value="earth" required><label>Earth</label>
+				<input type="radio" name="element" value="air"><label>Air</label>
+				<input type="radio" name="element" value="fire"><label>Fire</label>
+				<input type="radio" name="element" value="water"><label>Water</label>
+			</fieldset>
+			<fieldset id="buttons">
+				<input type="reset" value="Clear">
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<p id="myMsg">
+		
+		</p>
+	</section>
+	<script src="madlibs.js"></script>
+	<footer><a href="mailto:nlmacmillan@ucdavis.edu">Nathaniel MacMillan</a> 2014</footer>
+</body>
+</html>

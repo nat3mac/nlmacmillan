@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta-charset="UTF-8">
+<title>Home Interface</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/thermo.css">
+<link rel="stylesheet" type="text/css" href="css/startup.css">
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/thermo.js"></script>
+<script type="text/javascript" src="js/lights.js"></script>
+<script type="text/javascript" src="js/language.js"></script>
+<script type="text/javascript" src="js/startup.js"></script>
+</head>
+
+<body>
+
+	<section class="dialog" id="startup">
+		<div id="lang">
+				<img id="spanishIcon" class="langSelect" class="english" src="img/es.png">
+				<img id="englishIcon" class="langSelect" class="spanish" src="img/en.png">
+		</div>
+		<div class="en">
+		<h4>Solar Decathlon Home Interface</h4>
+		<p>Welcome to the energy control system for the Solar Decathlon home. This proposed interface allows you to adjust the thermostat setting, turn overhead lights on or off, and view remaining energy reserves along with a breakdown of average daily usage.</p>
+		
+		</div>
+		<div class="es">
+		<h4>Interfaz de Casa Solar Decathlon</h4>
+		<p>Bienvenido al sistema de control de energ&iacute;a para el hogar Solar Decathlon. Esta interfaz le permite ajustar la configuraci&oacute;n del termostato, encender o apagar las luces, y ver la cantidad en sus reservas de energ&iacute;a, junto con un an&aacute;lisis de promedio de uso diario.</p>
+		
+		</div>
+		<button class="okay" type="button"><span class="en">Got it!</span><span class="es">&iexcl;Bueno!</span></button>
+	</section>
+	<div class="shade"></div>
+
+	
+	<header>
+		<h1 contenteditable="true">Nuestra Casa</h1>
+	</header>
+
+	<div id='sizing'>
+		
+		<div id="primary">
+		
+			<div id="thermostat" class="primaryElement">
+				<div id="slider"><img src="img/slider.png" alt="slider"></div>
+				<div id="track"></div>
+				<div id="grad"><h2 id="temp">20</h2><h2 class="cel" id="degs">&deg;C</h2><h2 class="far" id="degs">&deg;F</h2></div>
+			</div>
+			
+			<div id="roomSelect" class="primaryElement">
+				<img id="roomIcon1" class="lightSwitch" src="img/lighticon.png">
+				<img id="roomIcon2" class="lightSwitch" src="img/lighticon.png">
+				<img id="roomIcon3" class="lightSwitch" src="img/lighticon.png">
+				<img id="roomIcon4" class="lightSwitch" src="img/lighticon.png">
+				<img id="roomIcon5" class="lightSwitch" src="img/lighticon.png">
+			</div>
+		
+			<div id="energyUse" class="primaryElement">
+				<img src="img/piegraph.svg" alt="uso de energia" class="es">
+				<img src="img/piegraph_en.svg" alt="energy usage" class="en">
+			</div>
+	
+		</div>
+		
+		<div id="selection">
+			<div id="selectThermo" class="selectionButton">
+				<h3 class="en">Thermostat</h3>
+				<h3 class="es">Termostato</h3>
+			</div>
+			<div id="selectLights" class="selectionButton">
+				<h3 class="en">Lights</h3>
+				<h3 class="es">Iluminaci&oacute;n</h3>
+			</div>
+			<div id="selectFeedback" class="selectionButton">
+				<h3 class="en">Energy Use</h3>
+				<h3 class="es">Uso de Energ&iacute;a</h3>
+			</div>
+		</div>
+	
+		<footer id="settingsBar">
+			
+			<div id="config">
+				<img id="configIcon" src="img/config.png">
+				<h3 class="en" class="configText">Configuration</h3>
+				<h3 class="es" class="configText">Configuraci&oacute;n</h3>
+			</div>
+			
+			<!--div id="lang">
+				<img id="englishIcon" class="langSelect" src="img/en.png">
+				<img id="spanishIcon" class="langSelect" src="img/es.png">
+			</div-->
+			
+		</footer>
+	
+	</div>
+
+	<section id="configuration" class="dialog">
+		<div id="language" class="setting">
+			<h4 class="es">Idioma</h4>
+			<h4 class="en">Language</h4>
+			<div class="langSelect" class="english" id="configEn">English</div>
+			<div class="langSelect" class="spanish" id="configEs">Espa&ntilde;ol</div>
+		</div>
+		
+		<div id="temperature" class="setting">
+			<h4 class="es">Unidades de Temperatura</h4>
+			<h4 class="en">Temperature Units</h4>
+			<div class="tempSelect" class="far" id="configFar">Fahrenheit</div>
+			<div class="tempSelect" class="cel" id="configCel">
+				<span class="en">Celsius</span>
+				<span class="es">Cent&iacute;grados</span>
+			</div>
+		</div>
+
+		<button class="okay" type="button">
+			<span class="es">&iexcl;Bueno!</span>
+			<span class="en">Okay!</span>
+		</button>
+
+	</section>
+	
+</body>
+
+</html>

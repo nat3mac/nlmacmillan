@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+* {
+	margin:0; padding:0; background-repeat: no-repeat;
+}
+
+body {
+	background: #4d4d4d;
+	max-width:1280px;
+	max-height:756px;
+	margin:auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	padding:8px;
+
+}
+
+h1{
+	font-weight: 300;
+	color: #7ad3ab;
+	width:50%;
+	padding-left: 32px;
+	background-image: url('../img/edit.png');
+	background-position: left;
+}
+h3{
+	font-weight: 400;
+	color: #7ad3ab;
+	font-size: 30px;
+}
+#sizing{
+	width: 1280px;
+	height: 640px;
+	margin: auto;
+}
+.primaryElement{
+	margin-left: 128px;
+	margin-top: 0px;
+	float: left;
+	width: 600px;
+	height: 640px;
+	position: relative;
+}
+#thermostat{
+	margin-left: 300px;
+	
+}
+#roomSelect{
+	background-image: url(../img/roomoutline.png);
+	display: none;
+}
+#energyUse{
+	/*background-image: url(../img/piegraph.svg);*/
+	display: none;
+}
+#settingsBar{
+	margin-top: 20px;
+	float: left;
+	height: 55px;
+	width: 1240px;
+	margin-left: 20px;
+	color: #7ad3ab;
+}
+#config{
+	margin-left: 10px;
+	line-height: 55px;
+}
+#config:hover{
+	cursor:pointer;
+}
+.configText{
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+}
+#configIcon{
+	float: left;
+	margin-top: 10px;
+	margin-right: 8px;
+}
+#lang{
+	float: right;
+	margin-right: 15px;
+	margin-top: 2px;
+}
+#englishIcon{
+	opacity: .3;
+	margin-right: 10px;
+}
+#spanishIcon{}
+
+.en{display: none;}
+
+.lightSwitch{
+	opacity: .3;
+}
+.lightSwith:hover {cursor: pointer;}
+#roomIcon1{
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 90px;
+}
+#roomIcon2{
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 260px;
+}
+#roomIcon3{
+	position: absolute;
+	margin-top: 310px;
+	margin-left: 175px;
+}
+#roomIcon4{
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 90px;
+}
+#roomIcon5{
+	position: absolute;
+	margin-top: 500px;
+	margin-left: 260px;
+}
+#primary{
+	float: left;
+	height: 640px;
+	width: 830px;
+}
+#selection{
+	float: left;
+	height: 640px;
+	width: 450px;
+}
+.selectionButton{
+	width: 450px;
+	height: 320px;
+}
+
+#selectThermo:hover, #selectLights:hover, #selectFeedback:hover {
+	cursor:pointer;
+}
+#selectThermo{
+	display: none;
+	background-image: url(../img/selectThermo.svg);
+}
+#selectLights{
+	background-image: url(../img/selectlights.svg);
+}
+#selectFeedback{
+	background-image: url(../img/selectEnergy.svg);
+}
